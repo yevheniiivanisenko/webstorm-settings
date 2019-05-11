@@ -30,11 +30,30 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="cs" value="const $NAME$ = $BODY$;" description="Create const variable - const a = 'b'" toReformat="false" toShortenFQNames="true">
+  <template name="cs" value="const $NAME$ = $BODY$;" description="Create const variable - const a = 'b'" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="aaf" value="($PARAMS$) =&gt; $STATEMENT$$END$" description="Anonymous arrow function" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_EXPRESSION" value="true" />
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="TS_EXPRESSION" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="af" value="const $NAME$ = ($PARAMS$) =&gt; $BODY$;" description="Arrow function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
 </templateSet>
