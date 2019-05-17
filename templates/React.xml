@@ -1,0 +1,7 @@
+<templateSet group="React">
+  <template name="impt" value="import PropTypes from 'prop-types';" description="Import prop-types library instance" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
