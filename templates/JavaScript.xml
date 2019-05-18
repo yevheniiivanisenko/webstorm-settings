@@ -15,16 +15,16 @@
     <context />
   </template>
   <template name="imd" value="import $ITEM$ from &quot;$MODULE$&quot;;" description="Import statement - import b from 'a'" toReformat="false" toShortenFQNames="true">
-    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
     <context>
       <option name="ES6_STATEMENT" value="true" />
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="im" value="import {$ITEM$$END$} from &quot;$MODULE$&quot;;&#10;" description="Import statement - import {b} from 'a'" toReformat="true" toShortenFQNames="true">
-    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="ES6_STATEMENT" value="true" />
       <option name="TS_STATEMENT" value="true" />
