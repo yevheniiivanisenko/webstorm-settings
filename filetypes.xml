@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Services" type="PLAIN_TEXT" />
       <mapping pattern=".lintstagedrc" type="PLAIN_TEXT" />
+      <mapping pattern=".prettier" type="PLAIN_TEXT" />
       <mapping pattern=".huskyrc" type="PLAIN_TEXT" />
       <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="start" type="PLAIN_TEXT" />
