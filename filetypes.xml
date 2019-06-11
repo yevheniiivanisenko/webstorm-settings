@@ -9,6 +9,7 @@
       <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping pattern=".sequelizerc" type="PLAIN_TEXT" />
       <mapping ext="php" type="PLAIN_TEXT" />
+      <mapping ext="crash" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
