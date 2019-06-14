@@ -6,6 +6,7 @@
       <mapping pattern=".prettier" type="PLAIN_TEXT" />
       <mapping pattern=".huskyrc" type="PLAIN_TEXT" />
       <mapping pattern=".env" type="PLAIN_TEXT" />
+      <mapping pattern="grid" type="PLAIN_TEXT" />
       <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping pattern=".sequelizerc" type="PLAIN_TEXT" />
       <mapping ext="php" type="PLAIN_TEXT" />
