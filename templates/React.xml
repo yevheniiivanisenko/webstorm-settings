@@ -4,4 +4,15 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="reduc" value="export default function $TM_FILENAME_BASE$(state = {}, action) {&#10;  switch (action.type) {&#10;    default:&#10;      return state;&#10;  }&#10;}&#10;" description="Creates redux reducer" toReformat="false" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="camelCase(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="duck" value="const k = ${PROJECT_NAME}&#9;&#10;" description="Creates a constant in according to redux ducks pattern" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
