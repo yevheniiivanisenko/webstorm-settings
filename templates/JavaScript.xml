@@ -47,10 +47,9 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="af" value="const $NAME$ = ($PARAMS$) =&gt; $BODY$;" description="Arrow function" toReformat="false" toShortenFQNames="true">
+  <template name="af" value="const $NAME$ = ($PARAMS$) =&gt; $END$;" description="Arrow function" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="ES6_STATEMENT" value="true" />
       <option name="TS_STATEMENT" value="true" />
