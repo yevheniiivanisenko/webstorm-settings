@@ -37,9 +37,9 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="aaf" value="($PARAMS$) =&gt; $STATEMENT$" description="Anonymous arrow function" toReformat="true" toShortenFQNames="true">
+  <template name="aaf" value="($PARAMS$) =&gt; $BODY$" description="Anonymous arrow function" toReformat="true" toShortenFQNames="true">
     <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="ES6_EXPRESSION" value="true" />
       <option name="ES6_STATEMENT" value="true" />
