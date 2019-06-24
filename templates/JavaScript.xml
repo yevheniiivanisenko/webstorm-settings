@@ -30,7 +30,7 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="cs" value="const $NAME$ = $BODY$;" description="Create const variable - const a = 'b'" toReformat="true" toShortenFQNames="true">
+  <template name="cs" value="const $NAME$ = $BODY$$END$;" description="Create const variable - const a = 'b'" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
