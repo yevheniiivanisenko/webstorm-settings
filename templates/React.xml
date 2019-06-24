@@ -10,7 +10,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="duck" value="const k = ${PROJECT_NAME}&#9;&#10;" description="Creates a constant in according to redux ducks pattern" toReformat="false" toShortenFQNames="true">
+  <template name="duck" value="const k = &#10;&#10;" description="Creates a constant in according to redux ducks pattern" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JS_STATEMENT" value="true" />
     </context>
