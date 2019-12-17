@@ -25,7 +25,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ushr" value="const $name$ = useSelector((state) =&gt; state.$property$);$end$" description="useSelector function call" toReformat="false" toShortenFQNames="true">
+  <template name="usrr" value="const $name$ = useSelector((state) =&gt; state.$property$);$end$" description="react-redux useSelector" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="property" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
@@ -33,16 +33,23 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="udh" value="const dispatch = useDispatch();$end$" description="useDispatch function call" toReformat="false" toShortenFQNames="true">
+  <template name="udrr" value="const dispatch = useDispatch();$end$" description="react-redux useDispatch" toReformat="false" toShortenFQNames="true">
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ush" value="const [$value$, $setValue$] = useState($initialValue$);$end$" description="useState function call" toReformat="false" toShortenFQNames="true">
+  <template name="usr" value="const [$value$, $setValue$] = useState($initialValue$);$end$" description="react useState" toReformat="false" toShortenFQNames="true">
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="setValue" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="initialValue" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="uer" value="useEffect(() =&gt; {&#10;  $end$&#10;}, [$dependencies$]);" description="react useEffect" toReformat="false" toShortenFQNames="true">
+    <variable name="dependencies" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
