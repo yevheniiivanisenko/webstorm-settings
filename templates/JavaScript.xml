@@ -14,7 +14,7 @@
     <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="imd" value="import $ITEM$ from &quot;$MODULE$&quot;;" description="Import statement - import b from 'a'" toReformat="false" toShortenFQNames="true">
+  <template name="imd" value="import $ITEM$ from '$MODULE$';" description="Import statement - import b from 'a'" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
     <context>
@@ -22,7 +22,7 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="im" value="import {$ITEM$} from &quot;$MODULE$&quot;;" description="Import statement - import {b} from 'a'" toReformat="true" toShortenFQNames="true">
+  <template name="im" value="import {$ITEM$} from '$MODULE$';" description="Import statement - import {b} from 'a'" toReformat="true" toShortenFQNames="true">
     <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
